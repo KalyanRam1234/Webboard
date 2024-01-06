@@ -1,0 +1,53 @@
+  <!DOCTYPE html>
+  <html>
+    <head>
+      <meta charset="utf-8">
+      <title>Canvas Pen Drawing</title>
+      <style>
+          canvas {
+              border: 1px solid #000;
+              cursor: crosshair;
+          }
+      </style>
+    </head>
+    <body>
+      <canvas id="canvas" width="500" height="500"></canvas>
+      <script>
+        const canvas = document.getElementById('canvas');
+        const ctx = canvas.getContext('2d');
+
+        let isDrawing = false;
+        let currentStroke = [];
+
+        function startDrawing(event) {
+          isDrawing = true;
+          currentStroke = [{x: event.offsetX, y: event.offsetY, rgba: getPixelRGBA(event.offsetX, event.offsetY)}];
+        }
+
+        function continueDrawing(event) {
+          if (!isDrawing) return;
+          const x = event.offsetX;
+          const y = event.offsetY;
+          ctx.beginPath();
+          ctx.moveTo(currentStroke[currentStroke.length - 1].x, currentStroke[currentStroke.length - 1].y);
+          ctx.lineTo(x, y);
+          ctx.stroke();
+          currentStroke.push({x: x, y: y, rgba: getPixelRGBA(x, y)});
+        }
+
+        function endDrawing(event) {
+          isDrawing = false;
+          console.log(currentStroke);
+        }
+
+        function getPixelRGBA(x, y) {
+          const pixelData = ctx.getImageData(x, y, 1, 1).data;
+          return [pixelData[0], pixelData[1], pixelData[2], pixelData[3]] ;
+        }
+
+        canvas.addEventListener('mousedown', startDrawing);
+        canvas.addEventListener('mousemove', continueDrawing);
+        canvas.addEventListener('mouseup', endDrawing);
+      </script>
+    </body>
+  </html>

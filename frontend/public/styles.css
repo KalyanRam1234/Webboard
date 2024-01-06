@@ -1,0 +1,356 @@
+.Dashboard{
+    position: absolute;
+    width: 1512px;
+
+    height:1100px;
+    left: 0px;
+    top: -6px;
+    bottom:0px;
+    background: #F6F5FA;
+    border-radius: 20px;
+    
+}
+
+.Sidebar{
+    position: absolute;
+    display:block;
+    height:1100px;
+    width: 312px;
+    left: 0px;
+    top: 0px;
+    bottom:0px;
+    background: linear-gradient(135deg, rgba(210, 218, 255, 0.8) 2.27%, rgba(210, 218, 255, 0) 101.43%);
+    box-shadow: 1.8386px 3.67719px 3.67719px 1.8386px rgba(0,0,0,0.25)
+}
+
+.Dashboard-text{
+    position: absolute;
+    width: 134px;
+    height: 34px;
+    left: 70px;
+    top: 124px;
+
+    text-decoration:none;
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    cursor:pointer;
+
+    /* identical to box height */
+
+    color: #060606;
+}
+
+.Dashboard-text:hover{
+    cursor: pointer;
+}
+
+.Courses-text{
+    text-decoration:none;
+    position: absolute;
+    width: 100px;
+    height: 34px;
+    left: 70px;
+    top: 205px;
+
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+
+    /* identical to box height */
+
+    color: #060606;
+}
+
+.Courses-text:hover{
+    cursor: pointer;
+}
+
+.Tasks-text{
+    text-decoration:none;
+    position: absolute;
+    width: 66px;
+    height: 34px;
+    left: 70px;
+    top: 286px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    
+    /* identical to box height */
+    
+    color: #060606;
+}
+
+.Tasks-text:hover{
+    cursor: pointer;
+}
+
+.Time-manager-text{
+    text-decoration:none;
+    position: absolute;
+    width: 174px;
+    height: 34px;
+    left: 70px;
+    top: 367px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    
+    /* identical to box height */
+    
+    color: #060606;
+}
+
+.Time-manager-text:hover{
+    cursor: pointer;
+}
+
+.Settings-text{
+    text-decoration:none;
+    position: absolute;
+    width: 99px;
+    height: 34px;
+    left: 70px;
+    top: 448px;
+    
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 34px;
+    
+    /* identical to box height */
+    
+    color: #060606;
+}
+
+.Settings-text:hover{
+    cursor: pointer;
+}
+
+.search-field{
+    
+    width: 530px;
+    height: 48px;
+    margin-left: 400px;
+    margin-top: 34px;
+    margin-right: 545px;
+    /* Whites/W1 */
+    background: #FFFFFF;
+    border: 1px solid #1DA4FB;
+    box-shadow: 0px 0px 0px 4px rgba(75, 77, 237, 0.04);
+    border-radius: 8px;
+
+    /* Inside auto layout */
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+}
+.recent-boards-text{
+    text-decoration:none;
+    position: absolute;
+    width: 280px;
+    height: 50px;
+    left: 400px;
+    top: 124px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 140%;
+
+    /* or 50px */
+
+    color: #000000;
+}
+.Add-Board-Button{
+    height:72px;
+    width:72px;
+    position: absolute;
+    left: 0%;
+    right: 0%;
+    top: 0%;
+    bottom: 0%;
+
+    /* Black's/B8 */
+    background: #9E9E9E;
+}
+
+.name-of-user{
+    text-decoration:none;
+    position:absolute;
+    width: 77px;
+    height: 26px;
+    top:36px;
+    right:137px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 26px;
+
+    /* identical to box height */
+    color: #000000;
+    
+    /* flex: none;
+    order: 0;
+    flex-grow: 0; */
+}
+
+.designation-of-user{
+    text-decoration:none;
+    position:absolute;
+    width: 79px;
+    height: 21px;
+    top:64px;
+    right:135px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 21px;
+
+    /* identical to box height */
+    color: #878686; 
+    
+    /* flex: none;
+    order: 1;
+    flex-grow: 0; */
+}
+
+.notifications{
+    text-decoration:none;
+    position: absolute;
+    top:49px;
+    right:233px;
+}
+
+
+.LMSArea{
+    box-sizing: border-box;
+
+    position: relative;
+    width: 972px;
+    height: 478px;
+    overflow: auto;
+    left: 400px;
+    top: 1px;
+
+    background: #FFFFFF;
+    box-shadow: -4px -4px 2px rgba(0, 0, 0, 0.25), 4px 4px 2px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+}
+
+.LMSArea-Path{
+    position: relative;
+    width: 110px;
+    height: 28px;
+    margin-left:50px;
+    margin-top: 14px;
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #405FF2;
+}
+
+.LMSArea-Title{
+    position: relative;
+    width: 146px;
+    height: 42px;
+    margin-top:9px;
+    margin-bottom: 16px;
+    margin-left:50px;
+
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    color: #000000;
+}
+
+.LMSCourse-pink{
+    position:relative;
+    width: 255px;
+    height: 139px;
+    background: url("./img/pink-triangles.png");
+}
+
+.LMSCourse-pink:hover{
+    cursor: pointer;
+}
+
+.LMSCourse-purple{
+    position:relative;
+    width: 255px;
+    height: 139px;
+    background: url("./img/purple-triangles.png");
+}
+
+.LMSCourse-purple:hover{
+    cursor: pointer;
+}
+
+.LMSCourse-orange{
+    position:relative;
+    width: 255px;
+    height: 139px;
+    background: url("./img/orange-triangles.png");
+}
+.LMSCourse-orange:hover{
+    cursor: pointer;
+}
+.courseName{
+    position:absolute;
+    width: 255px;
+    height: 43px;
+    bottom:0px;
+    background: #FFFFFF;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.TrialBoard{
+    font-size: 40px;
+    text-align: center;
+    box-sizing: border-box;
+    position: relative;
+    width: 159px;
+    height: 220px;
+    line-height: 220px;
+    background: #F6F5FA;
+    border-radius: 10px;
+    border: 3px solid;
+    border-color:#C45DE9;
+}
+
+.TrialBoardText{
+    position: relative;
+    width: 153px;
+    height: 58px;
+    bottom: 61px;
+    left:3px; 
+
+    background: #E6E6E6;
+    border-radius: 0px 0px 10px 10px;
+}
+
+.border-gradient{
+    border-radius: 15px;
+    border: 3px solid transparent;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #C45DE9, #4F37B1) border-box;
+    border: 3px solid transparent;
+}

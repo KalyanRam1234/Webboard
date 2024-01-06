@@ -1,0 +1,20 @@
+When professor clicks external tool - 
+    
+    a) Open blank Canvas
+    b) Get course details
+    c) When professor clicks export :
+        .) (Assuming saving to moodle) Dialog Box : What name to PDF?
+        .) Generate URL that professor needs to copy paste
+        .) Create Prompt that gives the professor the URL
+
+Prof will copy paste the (prompt) URL into url tool in moodle
+
+When professor clicks URL tool - 
+    a) In React, extract course id and pdf name
+    b) Send this data to the backend
+    c) Backend should query firebase for the pdf links
+    d) PDF Link of firebase is sent to react
+    e) React gets PDF makes GET request to link and loads in canvas
+
+Add a new route in backend so that when canvas is reloaded, it downloads the current canvas in backend downloads
+folder and backend reads it as a buffer and sends it to the frontend. 

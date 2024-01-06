@@ -1,0 +1,2 @@
+change ip address to correct one in backend and frontend in app.js while getting c_id from backend
+Frontend - App.js line number 8 in the axios call to server's ip

@@ -1,0 +1,68 @@
+[33m[nodemon] 2.0.20[39m
+[33m[nodemon] to restart at any time, enter `rs`[39m
+[33m[nodemon] watching path(s): *.*[39m
+[33m[nodemon] watching extensions: js,mjs,json[39m
+[32m[nodemon] starting `node lti.js`[39m
+(node:18392) [MONGOOSE] DeprecationWarning: Mongoose: the `strictQuery` option will be switched back to `false` by default in Mongoose 7. Use `mongoose.set('strictQuery', false);` if you want to prepare for this change. Or use `mongoose.set('strictQuery', true);` to suppress this warning.
+(Use `node --trace-deprecation ...` to show where the warning was created)
+Listening on port 4000.
+  _   _______ _____      _  _____
+ | | |__   __|_   _|    | |/ ____|
+ | |    | |    | |      | | (___  
+ | |    | |    | |  _   | |\___ \ 
+ | |____| |   _| |_| |__| |____) |
+ |______|_|  |_____|\____/|_____/ 
+
+ LTI Provider is listening on port 5000!
+
+ LTI provider config: 
+ >App Route: /
+ >Initiate Login Route: /login
+ >Keyset Route: /keys
+ >Dynamic Registration Route: /register
+
+Starting in Dev Mode, state validation and session cookies will not be required. THIS SHOULD NOT BE USED IN A PRODUCTION ENVIRONMENT!
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+[StorageError [FirebaseError]: Firebase Storage: Object 'null/test_1.pdf' does not exist. (storage/object-not-found)] {
+  code: 'storage/object-not-found',
+  customData: { serverResponse: '' },
+  status_: 0,
+  _baseMessage: "Firebase Storage: Object 'null/test_1.pdf' does not exist. (storage/object-not-found)"
+}
+
+
+
+
+[StorageError [FirebaseError]: Firebase Storage: Object 'null/test_1.pdf' does not exist. (storage/object-not-found)] {
+  code: 'storage/object-not-found',
+  customData: { serverResponse: '' },
+  status_: 0,
+  _baseMessage: "Firebase Storage: Object 'null/test_1.pdf' does not exist. (storage/object-not-found)"
+}
+
+
+
+
+
+

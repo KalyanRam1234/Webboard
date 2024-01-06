@@ -1,0 +1,528 @@
+.NewDashboard{
+    display: grid;
+    grid-template-columns: 0fr 1fr;
+}
+.NewNavbar{
+    display: block;
+    height: auto;
+    min-height: 100vh;
+    width: 70px;
+}
+.NewNavbar1{
+    display: block;
+    height: auto;
+    min-height: 100vh;
+    width: 240px;
+}
+.info{
+    font-family: 'Lato';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    padding-left: 20px;
+color: #984FD4;
+}
+.Toggler{
+    margin-left: 15px;
+   margin-bottom: 50px;
+   cursor: pointer;
+   transform: scale(0.85,0.85);
+   position: fixed;
+   transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+.Toggler:hover{
+    transform: scale(0.9,0.9);
+}
+.Others{
+    margin-top: 25px;
+    margin-left: 17px;
+    margin-bottom: 50px;
+    transform: scale(0.9,0.9);
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+.Others1{
+    margin-top: 20px;
+    margin-left: 9px;
+    margin-bottom: 45px;
+    transform: scale(0.9,0.9);
+    cursor: pointer;
+    transition-timing-function: ease-in-out;
+    transition: 0.2s;
+}
+.Others:hover{
+    transform: scale(0.95,0.95);
+}
+.Other{
+    margin-top: 25px;
+    margin-left: 15px;
+    transform: scale(0.9,0.9);
+    cursor: pointer;
+}
+#Bell{
+    margin-right: 25px; 
+    margin-top: 18px;
+}
+.Other1{
+    margin-top: 25px;
+    margin-left: 5px;
+    transform: scale(0.9,0.9);
+    cursor: pointer;
+}
+.Other:hover{
+    transform: scale(0.95,0.95);
+}
+.sideelem{
+    position: fixed;
+    margin-top: 90px;
+}
+.Maincontent{
+  background-color: #F9F6FF;
+}
+/* .navbartitle{
+    font-family: 'School Story';
+    font-style: normal;
+} */
+.sizing{
+    transform: scale(0.8,0.8);
+    margin-top: 10px;
+    margin-left: 30px
+    
+}
+.search_bar{
+    margin-right: auto;
+    margin-top: 11px;
+    width: 52%;
+    /* border-radius: 7px; */
+}
+.search_bar1{
+    margin-right: auto;
+    margin-top: 11px;
+    width: 48%;
+}
+input[type=search]{
+    box-sizing: border-box;
+    border: 1px solid #984FD4;
+    outline: none;
+    transition: 0.2s;
+    -webkit-transition: 0.2s;
+}
+input[type=search]:focus{
+    outline: none!important;
+  -webkit-box-shadow: none;
+    border: 1px solid #984FD4;
+}
+.Recent{
+    font-family: 'Lato';
+    font-style: normal;
+    color: #613DBA;
+    font-weight: 600;
+    font-size: 28px;
+    margin-top: 39px;
+    margin-left: 65px;
+    margin-bottom: 46px;
+    letter-spacing: 0.8px;
+}
+
+.coursecard{
+    width: 160px;
+    height: 220px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #C45DE9, #4F37B1) border-box;
+    float: left;
+    /* margin-right: 6vw; */
+    margin-left: 50px;
+    margin-bottom: 40px;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.coursecard:hover{
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    transform: scale(1.03,1.03);
+}
+
+.newcoursecard{
+    height: 160px;
+    background-color: white;
+    border: 3px solid transparent;
+    border-radius: 10px;
+    background: linear-gradient(white, white) padding-box,
+    linear-gradient(to bottom, #C45DE9, #4F37B1) border-box;
+    /* float: left; */
+    /* margin-right: 6vw; */
+    /* margin-left: 50px;
+    margin-bottom: 40px; */
+    margin-bottom: 40px;
+    /* width: 20%!important; */
+    /* margin-right: 10px; */
+    width: 22.4%!important;
+    margin-right: 25px;
+    cursor: pointer;
+    
+}
+.newcoursecard:hover{
+    transition-timing-function: ease-in-out;
+    transition: 0.3s;
+    transform: scale(1.02,1.02);
+}
+/* @media (max-width: 1470px) {
+    .coursecard{
+        margin-right: 80px;
+    }
+} */
+.adjust{
+    margin-top: 30px;
+    margin-left: 15px;
+}
+/* @media (max-width:1472px){
+    .adjust{
+        margin-left: 7vw;
+    }
+} */
+#silhoutte{
+    margin-top: 18px;
+    margin-right: 40px;
+}
+@media (max-width: 1200px){
+    .newcoursecard{
+        width: 31%!important;
+        margin-right: 15px;
+    }
+}
+@media (min-width: 768px) and (max-width: 992px){
+    .newcoursecard{
+        width: 45%!important;
+        margin-right: 25px;
+    }
+}
+@media (max-width: 768px){
+    .newcoursecard{
+        width: 90%!important;
+        /* margin-right: 25px; */
+    }
+}
+@media (max-width: 500px){
+    .newcoursecard{
+        width: 97%!important;
+        /* margin-right: 25px; */
+    }
+}
+@media (min-width: 1260px) and  (max-width: 1413px){
+    .coursecard{
+        margin-left: 60px;
+    }
+    .Recent{
+        margin-left: 75px;
+    }
+    .sizing{
+        margin-left: 40px;
+    }
+    .adjust{
+        margin-left: 15px;
+    }
+    .search_bar{
+        width: 45%;
+    }
+    .search_bar1{
+        width: 38%;
+    }
+}
+@media (min-width: 1150px) and (max-width: 1260px) {
+    .search_bar{
+        width: 43%;
+    }
+    .search_bar1{
+        width: 34%;
+    }
+}
+
+.newProfile{
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    margin-right: 25px;
+    margin-top: 22px;
+    line-height: 25px;
+}
+@media screen and (max-width: 1150px) {
+    .search_bar{
+        width: 35%;
+    }
+    .search_bar1{
+        width: 24%;
+    }
+    #Bell{
+        margin-right: 15px; 
+    }
+    #silhoutte{
+        margin-right: 30px;
+    }
+    .newProfile{
+        margin-right: 10px;
+    }
+}
+
+@media (min-width: 1072px) and (max-width: 1194px){
+    .coursecard{
+        margin-left: 60px;
+    }
+    .Recent{
+        margin-left: 80px;
+    }
+    .sizing{
+        margin-left: 45px;
+    }
+    .adjust{
+        margin-left: 20px;
+    }
+}
+@media (min-width: 850px) and (max-width: 1000px) {
+    .coursecard{
+        margin-left: 60px;
+    }
+    .Recent{
+        margin-left: 85px;
+    }
+    .sizing{
+        margin-left: 45px;
+        transform: scale(0.75,0.75);
+    }
+    .adjust{
+        margin-left: 25px;
+    }
+    .search_bar{
+        width: 26%;
+    }
+    .search_bar1{
+        width: 20%;
+    }
+}
+
+@media screen and (min-width: 768px) and (max-width: 850px) {
+    .coursecard{
+        margin-left: 30px;
+        margin-right: 23px;
+    }
+    .Recent{
+        margin-left: 55px;
+    }
+    .sizing{
+        margin-left: 15px;
+        transform: scale(0.75,0.75);
+    }
+    .adjust{
+        margin-left: 25px;
+    }
+    .search_bar{
+        width: 23%;
+    }
+}
+
+.details{
+    height: 55px;
+    border-radius: 0px 0px 10px 10px;
+    /* border-top: 1px solid grey; */
+    /* background-color: #F9F6FF; */
+    font-family: 'Roboto';
+    word-wrap: break-word;  
+    
+}
+.courseimg{
+    height: 160px;
+    padding-top: 35px;
+}
+.courseimg1{
+    height: 100px;
+}
+.imgadj{
+    object-fit:contain;
+    height: 100px;
+    width: 100%;
+    max-width: 100%;
+}
+
+.detailtitle{
+    padding-top: 4px;
+    padding-left: 10px;
+    font-size: 17px;
+    font-weight: 400;
+    
+}
+.detaildate{
+    padding-left: 10px;
+    font-size: 13px;
+    font-weight: 400;
+}
+.plus{
+    transform: scale(0.85,0.85);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 75px;
+    cursor: pointer;
+}
+.plus:hover{
+    transform: scale(0.9,0.9);
+}
+@media screen and (max-width: 785px) {
+    .Nodisplay{
+        display: none!important;
+    }
+    .NewDashboard{
+        display: block;
+    }
+    .coursecard{
+        margin-left: 10px;
+    }
+    .adjust{
+        margin-top: 0px;
+        margin-left: 0px;
+        min-height: 100vh;
+    }
+    .sizing{
+        transform: scale(0.7,0.7);
+        margin-left: -35px;
+    }
+    .Smallscreen{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        /* or 25px */
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 25px;
+        color: #613DBA;
+    }
+    .line{
+        width: 180px;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: -3px;
+        opacity: 1;
+        border: 1.5px solid
+    }
+    .NewAdj{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 20px;
+        color: #613DBA;
+        padding-top: 5px;
+        margin-left: 10px;
+        padding-bottom: 10px;
+    }
+    #silhoutte{
+        margin-top: 9px;
+        margin-right: 0px;
+        transform: scale(0.75,0.75);
+    }
+    #mag{
+        margin-left: auto;
+        margin-top: 8px;
+        margin-right: 20px;
+        transform: scale(1.1,1.1);
+    }
+    .adjcarousel{
+        align-items: start!important;
+        opacity: 1!important;
+    }
+    .iconadj{
+        transform: scale(0.5,0.5);
+        margin-top: 6px;
+    }
+    .Options{
+        width: 100%;
+        height: 60px;
+        background-color: #F9F7FF;
+        position: fixed;
+        border-top: 2px solid #613DBA;
+        bottom: 0px;
+    }
+}
+@media screen and (max-width: 600px) {
+    .coursecard{
+        margin-left: 0px;
+        width: 130px;
+        height: 175px;
+        border: 1.5px solid transparent;
+    }
+    .coursecard:hover{
+        transform: none;
+    }
+    .NewAdj{
+        font-family: 'Lato';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 22px;
+        color: #613DBA;
+        padding-top: 5px;
+        margin-left: 3px;
+        padding-bottom: 20px;
+    }
+}
+@media screen and (max-width: 500px) {
+    .coursecard{
+        margin-left: 0px;
+        width: 120px;
+        height: 160px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .sizing{
+        transform: scale(0.65,0.65);
+        margin-left: -40px;
+    }
+    #silhoutte{
+        margin-top: 10px;
+        margin-right: -4px;
+        transform: scale(0.7,0.7);
+    }
+    #mag{
+        
+        margin-right: 10px;
+    }
+}
+@media screen and (max-width: 460px) {
+    .coursecard{
+        margin-left: 0px;
+        width: 100px;
+        height: 140px;
+    }
+    .NewAdj{
+        font-size: 21px;
+    }
+}
+@media screen and (max-width: 400px) {
+    .coursecard{
+        margin-left: 0px;
+        width: 95px;
+        height: 130px;
+    }
+}
+@media screen and (min-width:785px) {
+    .Yesdisplay{
+        display: none!important;
+    }
+}
+
+.editcarousel{
+    border: 1px solid #613DBA;
+border-radius: 10px;
+padding-left: calc(0.3vw + 0.5rem);
+}
+
+.carousel .carousel-control-prev-icon {
+    background-image: url("images/Leftarrow.png") ;
+   }
+   
+.carousel .carousel-control-next-icon {
+     background-image: url("images/Rightarrow.png") ;
+   }

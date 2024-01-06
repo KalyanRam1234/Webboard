@@ -1,0 +1,4 @@
+Frontend- 
+
+1) need to add loading page
+2) closing of modal
